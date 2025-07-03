@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    background-color: #1A1A1A;
+    color: #D9D9D9;
+    font-family: "Roboto", sans-serif;
+    background-image: url(/images/bg-top.png), url(/images/bg-bot.png);
+    background-position: top center, bottom center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    background-attachment: fixed, fixed;
+    text-align: center;
+    display: block;
+}
+
+#scoreboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    margin-top: 200px;
+}
+
+.team {
+    width: 408px;
+}
+
+h1 {
+    font-family: "Climate Crisis", sans-serif;
+    font-size: 64px;
+    margin: 0;
+    line-height: 96px;
+}
+
+h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 80px;
+    margin: 0;
+    line-height: auto;
+}
+
+.team-banner {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    padding: 28px 36px;
+}
+
+.team-logo {
+    object-fit: contain;
+    width: 80px;
+    margin-right: 32px;
+}
+
+.points-add {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.points-btn {
+    border: 2px solid var(--main-color);
+    width: 64px;
+    height: 64px;
+    color: #D9D9D9;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    background: var(--kill-count);
+    background-size: cover;
+}
+
+.points-btn:hover {
+    background: var(--kill-count), var(--main-color);
+    background-size: cover;
+    background-blend-mode: screen;
+    transition: 200ms;
+}
+
+.total-points {
+    border-top: 20px solid var(--main-color);
+    display: flex;
+    align-items: center;
+}
+
+#dragonboard {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.dragon-logo {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    overflow: hidden;
+}
+
+#dragon-icon {
+    height: 64px;
+    transform: rotate(-45deg);
+    margin: 0;
+    fill: #D9D9D9;
+}
+
+.dragon-count {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    margin: 0 80px;
+}
+
+.dragonbtn{
+    background-color: #1A1A1A;
+    border: 2px solid #D9D9D9;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+
+.dragonbtn:hover {
+    background-color: var(--main-color);
+    background-clip: content-box;
+    padding: 8px;
+}
+
+#msi-logo {
+    display: flex;
+    align-items: center;
+}
+
+#msi-2025 {
+    margin: 100px;
+    fill: #D9D9D9;
+    width: 440px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+#single {
+    --kill-count: var(--onekill);
+}
+
+#double {
+    --kill-count: var(--twokill);
+}
+
+#triple {
+    --kill-count: var(--threekill);
+}
+
+#quadra {
+    --kill-count: var(--fourkill);
+}
+
+#penta {
+    --kill-count: var(--fivekill);
+}
+
+.blue {
+    --main-color: var(--teamone);
+}
+
+.red {
+    --main-color: var(--teamtwo);
+}
+
+:root {
+    /* COLORS */
+    --teamone: #6331F9;
+    --teamtwo: #EF312D;
+    /* KILLS */
+    --onekill: url(/images/kill.png);
+    --twokill: url(/images/double.png);
+    --threekill: url(/images/triple.png);
+    --fourkill: url(/images/quadra.png);
+    --fivekill: url(/images/penta.png);
+}
